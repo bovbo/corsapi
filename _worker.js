@@ -487,7 +487,7 @@ async function handleM3u8Request(request, targetUrlParam, currentOrigin) {
 
   try {
     const controller = new AbortController()
-    const timeoutId = setTimeout(() => controller.abort(), 15000)
+    const timeoutId = setTimeout(() => controller.abort(), 13000)
     // v2.0.28: 带 Referer + Origin, 很多视频源需要才能返回 m3u8
     const upstream = await fetch(targetURL.toString(), {
       headers: {
